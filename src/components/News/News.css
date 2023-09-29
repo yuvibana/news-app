@@ -1,0 +1,26 @@
+.NewsListingDiv {max-width: 80vw;margin: 0 auto;}
+.NewsListingDiv .gridBox:hover {transform: scale(1.02);transition: all 0.4s ease-in-out;z-index: 1;border: 1px solid #0f032b;}
+.NewsListingDiv .newsAvtar img {width: 100%;height: 400px;object-fit: cover;border-radius: 10px;}
+.NewsListingDiv .cardtext {font-size: 16px;font-weight: 600;margin: 15px 0;color: #000;}
+.innerDetailBox {max-width: 800px;margin: 0 auto;}
+.innerDetailBox .newsAvtar img {width: 100%;}
+
+.detailModel{overflow-x: auto;}
+
+.pagination {margin: 30px auto; gap: 0 5px;}
+.pagination li a{width: 40px; height: 30px; line-height: 30px; display: block; text-align: center; text-transform: capitalize; border: 1px solid #757575; border-right-width: 0; cursor: pointer;}
+.pagination li a:last-child{border-right-width: 1px;}
+.pagination>.active>a,.pagination>.active>span,.pagination>.active>a, 
+.pagination>.active>a,.pagination>.active>span:hover,.pagination>.active>a:hover{border-color: #fff;}
+
+
+@media (max-width:1350px) {
+    .NewsListingDiv .newsAvtar img {
+        height: 290px;
+    }
+}
+@media (max-width:576px) {
+    .NewsListingDiv {max-width: 96vw;}
+    .NewsListingDiv .gridDiv {grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));}
+    .innerDetailBox {max-width: 100%; padding:15px;}
+}
